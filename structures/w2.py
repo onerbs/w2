@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import Iterable
-from structures.linked_list import LinkedList
+from structures.linked_list_extra import LinkedList
 
 
 class _Linear(ABC):
@@ -38,7 +38,7 @@ class _Linear(ABC):
 
 
 class Stack(_Linear):
-    def push(self, item):  # O(n)
+    def push(self, item):  # O(1)
         """Adds one item to the stack."""
         super().push(item)
 
@@ -48,7 +48,7 @@ class Stack(_Linear):
 
 
 class Queue(_Linear):
-    def push(self, item):  # O(n)
+    def push(self, item):  # O(1)
         """Adds one item to the queue."""
         super().push(item)
 
@@ -58,7 +58,7 @@ class Queue(_Linear):
 
 
 class Deque(_Linear):
-    def push(self, item):  # O(n)
+    def push(self, item):  # O(1)
         """Adds one item to the end of the deque."""
         super().push(item)
 
