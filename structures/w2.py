@@ -44,7 +44,7 @@ class Stack(_Linear):
 
     def pop(self):  # O(n)
         """Removes the oldest item from the stack."""
-        return super().pop()  # LIFO
+        return self._items.pop()  # LIFO
 
 
 class Queue(_Linear):
@@ -67,7 +67,7 @@ class Deque(_Linear):
 
         :returns: The removed item.
         """
-        return super().pop()
+        return self._items.pop()
 
     def unshift(self, value):  # O(1)
         """Adds one item to the beginning of the deque."""
